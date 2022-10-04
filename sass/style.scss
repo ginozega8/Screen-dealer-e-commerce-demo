@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//Variables
+$bg-color: black;
+$bg-color2: rgb(14, 14, 14);
+$text-color: white;
+$primary-color: yellow;
+$secondary-color: rgb(220, 20, 220);
+$multicolor-bar: linear-gradient(45deg, $primary-color, $secondary-color) 1;
+$bg-card: rgb(28, 27, 27);
+
+//General
+body{
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    color: $text-color;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+//Custom Scrollbar
+body::-webkit-scrollbar {
+    background-color: #0b0b0c;
+    width: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 100px;
+    transition: all 0.5s;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: $primary-color;
+}
+
+//Navbar
+nav{
+    background-color: $bg-color;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 3px solid;
+    border-image: $multicolor-bar;
+    transition: all 0.5s;
+        p{
+            padding-left: 1vw;
+            font-style: italic;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button{
+            font-size: 30px;
+            margin-right: 3vw;
+            background: none;
+            border: none;
+            color: $text-color;
+            cursor: pointer;
+         }
+    }
+    
+    .hidden-navbar {
+        transform: translateY(-200px);
+        transition: all 0.5s;
+    }
+
+    #ham-menu{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100vw;
+        height: 30vh;
+        text-align: center;
+        z-index: 99;
+        background-color: $bg-color2;
+        border-bottom: solid;
+        border-image: $multicolor-bar;
+        transition: all 0.5s;
+        a{
+            padding: 20px 0 20px 0;
+            font-size: 20px;
+            text-decoration: none;
+            color: $text-color;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: $primary-color;
+        }
+    }
+    
+
+    .show-ham{
+        top: 0;
+    }
+
+    .hide-ham{
+        top: -400px;
+    }
+
+    .stop-scrolling{ //Disable scrolling when ham-menu is displayed
+        height: 100%;
+        overflow: hidden;
+    }
+
+//Welcome Section
+.welcome-section{
+    background-color: $bg-color;
+    padding-top: 70px;
+    border-bottom: 3px solid;
+    border-image: $multicolor-bar;
+    .slider{
+
+        .slide{
+            margin-bottom: 30px;
+            display: flex;
+            .welcome-description{
+                align-self: center;
+                margin-left: 3vw;
+                h2{
+                    font-size: 36px;
+                }
+                button{
+                    background-color: $primary-color;
+                    color: black;
+                    font-weight: bold;
+                    padding: 10px;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                }
+                button:hover{
+                    background-color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+//Toolbar
+.toolbar{
+    background-color: $bg-color2;
+    display: flex;
+    justify-content: space-evenly;
+
+    .toolbar-selectors{
+        text-align: center;
+        margin: 6rem 0 3rem 0;
+        color: $primary-color;
+        cursor: pointer;
+        i{
+            font-size: 80px;
+        }
+    }
+
+    .toolbar-selectors:hover > p{
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+    }
+
+}
+
+.experience-cards {
+    background-color: $bg-color2;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+    .experience-card{
+        width: 25vw;
+        background-color: $bg-card;
+        border-radius: 10px;
+        
+        h2{
+            color: $secondary-color;
+            padding: 0 15px 0 15px;
+        }
+        p{
+            font-weight: 300;
+            padding: 0 15px 0 15px;
+        }
+        a{
+            color: $primary-color;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0 15px 0px 15px;
+            transition: all 0.5s;
+            i{
+                vertical-align: middle;
+            }
+        }
+        a:hover{
+            color: $text-color;
+        }
+        img{
+            width: 25vw;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+}
+
+.experience-title{
+    background-color: $bg-color2;
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+    padding: 10vh;
+}
+
+.square-grid{
+    display: grid;
+    background-color: $bg-color2;
+    padding: 5rem;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    #grid-item-0{
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        text-align: center;
+    }
+    #grid-item-1{
+        grid-column: 3 / 3;
+        grid-row: 1 / 3;
+        text-align: center;
+        p{
+            margin-top: 95px;
+          }
+    }
+    #grid-item-2{
+        grid-column: 1 / 2;
+        text-align: center;
+        p{
+          margin-top: 60px;
+        }
+    }
+    #grid-item-3{
+        grid-column: 2 / 4;
+        text-align: center;
+    }
+}
+
+.square-grid > div {
+    background-color: $bg-card;
+    box-shadow: -6px -2px 14px 1px rgba(0,0,0,0.57);
+    transition: all 0.5s;
+    cursor: pointer;
+    p{
+        font-size: 24px;
+        color: white;
+        letter-spacing: 2px;
+    }
+}
+
+.square-grid > div:hover {
+    background-color: $secondary-color;
+}
+
+//Footer
+footer {
+    background-color: $bg-color;
+    padding: 20px 0 20px 0;
+
+    .footer-first{
+        display: grid;
+        grid-template-columns: 40% 20% 20%;
+        padding: 10px 10px 10vh;
+        justify-content: center;
+        ul{
+            list-style: none;
+            margin: 0;
+            h2{
+                font-weight: 300;
+            }
+            li{
+                font-weight: 100;
+                cursor: pointer;
+                transition: all 0.5s;
+            }
+            li:hover{
+                color: $primary-color;
+            }
+        }
+    }
+
+    .footer-second{
+        padding: 5vh 10px 3vh;
+        display: flex;
+        justify-content: space-evenly;
+        .social-media{
+            i{
+                font-size: 32px;
+                cursor: pointer;
+                transition: all 0.5s;
+            }
+            i:hover{
+                color: $primary-color;
+            }
+        }
+    }
+
+    h2{
+        font-weight: 300;
+        margin: 0;
+    }
+    p{
+        margin: 0;
+        font-weight: 100;
+    }
+    hr{
+        margin: 0 10vw 0 10vw;
+    }
+}
+
+// For Tablet
+@media only screen and (max-width: 1034px){
+    .welcome-section{
+        .slider{
+            .slide{
+                flex-direction: column;
+                img{
+                    align-self: center;
+                    width: inherit;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+
+    .experience-cards {
+        flex-direction: column;
+        align-items: center;
+        .experience-card{
+            width: 50vw;
+            margin: 20px 0 20px 0;
+            img{
+                object-fit: cover;
+                width: 50vw;
+                height: 50vh;
+            }
+        }
+    }
+
+    .square-grid{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        > div {
+            width: 80vw;
+           img{
+            scale: 70%;
+           }
+
+        }
+    }
+
+}
+// For Mobile
+@media only screen and (max-width: 600px){ 
+    .experience-cards {
+        .experience-card{
+            width: 80vw;
+            img{
+                width: 80vw;
+            }
+        }
+    }
+
+    .square-grid{
+        > div {
+            width: 100vw;
+        }
+    }
+
+    footer{
+        .footer-first{
+            grid-template-columns: 80%;
+            ul{
+                padding: 0;
+            }
+            > div {
+                padding: 20px 0 20px 0;
+            }
+        }
+    }
+
+}
+

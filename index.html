@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <title>Screen Dealer - Home</title>
+    <link rel="icon" href="https://res.cloudinary.com/dgiqi5urn/image/upload/v1664911760/screendealer/d_tsizcv.png">
+</head>
+<body>
+
+    <nav id="navbar">
+        <p class="logo-text">— Screen Dealer</p>
+        <button id="ham-button" onclick="showHam()">☰</button>
+    </nav>
+
+    <div id="ham-menu" class="hide-ham">
+        <a href="#welcome-section" onclick="showHam()">1. Home</a>
+        <a href="#products" onclick="showHam()">2. Products</a>
+        <a href="#contact" onclick="showHam()">3. Contact</a>
+    </div>
+
+
+    <div class="glide welcome-section" id="welcome-section">
+        <div class="glide__track slider" data-glide-el="track">
+          <ul class="glide__slides">
+
+            <li class="glide__slide slide">
+                <div class="welcome-description">
+                    <h2>Welcome to screen dealer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A sapiente distinctio voluptate velit vero consequatur enim dolorum hic iure rerum eveniet sunt nobis atque assumenda, asperiores soluta. Accusamus, sunt perspiciatis?</p>
+                    <button>Learn More</button>
+                </div>
+                <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_scale,h_700,w_700/v1664224025/screendealer/PngItem_2061685_agtemc.png" alt="screen">
+            </li>
+
+            <li class="glide__slide slide">
+                <div class="welcome-description">
+                    <h2>Check out our newest products</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit voluptates accusamus qui fugit? Voluptatibus, aliquid sit? Consectetur nesciunt ad magnam sit corporis sapiente magni non autem vero doloribus, quod tempora?</p>
+                    <button>Learn More</button>
+                </div>
+                <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_scale,h_700,w_700/v1664222331/screendealer/pngegg_2_d7iwzf.png" alt="screen">
+            </li>
+
+            <li class="glide__slide slide">
+                <div class="welcome-description">
+                    <h2>Bigger screens for bigger places</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit voluptates accusamus qui fugit? Voluptatibus, aliquid sit? Consectetur nesciunt ad magnam sit corporis sapiente magni non autem vero doloribus, quod tempora?</p>
+                    <button>Learn More</button>
+                </div>
+                <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_scale,w_700/v1664219698/screendealer/pngegg_1_zhdi3p.png" alt="screen">
+            </li>
+
+          </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+          </div>
+      </div>
+
+      <div class="toolbar" id="products">
+
+        <div class="toolbar-selectors">
+            <i class='bx bx-desktop'></i>
+            <p>MONITORS</p>
+        </div>
+
+        <div class="toolbar-selectors">
+            <i class='bx bx-tv'></i>
+            <p>TVS</p>
+        </div>
+
+        <div class="toolbar-selectors">
+            <i class='bx bx-archive'></i>
+            <p>OTHER</p>
+        </div>
+
+      </div>
+      <h2 class="experience-title">Know us</h2>
+      <div class="experience-cards">
+        <div class="experience-card">
+            <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_crop,h_400,w_400/v1664392169/screendealer/mujer-programa-javascript-1024x576_nibcwk.jpg">
+  
+            <h2>Work to the next level</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Dicta inventore cum ullam, aperiam distinctio autem libero,
+                  recusandae dolores maxime temporibus officia nulla doloribus
+                   nesciunt pariatur nemo ipsam, cumque sequi aliquam?</p>
+            <a href="">Discover<i class='bx bx-chevron-right'></i></a>
+  
+        </div>
+
+        <div class="experience-card">
+            <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_thumb,h_400,w_400/v1664392712/screendealer/20171122142613-shutterstock-705666487_gdq3ez.jpg">
+
+            <h2>Game to the next level</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Dicta inventore cum ullam, aperiam distinctio autem libero,
+                  recusandae dolores maxime temporibus officia nulla doloribus
+                   nesciunt pariatur nemo ipsam, cumque sequi aliquam?</p>
+            <a href="">Discover<i class='bx bx-chevron-right'></i></a>
+
+        </div>
+
+        <div class="experience-card">
+            <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_thumb,h_400,w_400/v1664392808/screendealer/BDQF7N2_cwlxcg.jpg">
+
+            <h2>Watch to the next level</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Dicta inventore cum ullam, aperiam distinctio autem libero,
+                  recusandae dolores maxime temporibus officia nulla doloribus
+                   nesciunt pariatur nemo ipsam, cumque sequi aliquam?</p>
+            <a href="">Discover<i class='bx bx-chevron-right'></i></a>
+
+        </div>
+
+
+      </div>
+      <div class="square-grid">
+        <div id="grid-item-0">
+            <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_scale,w_308/v1664396855/screendealer/pngegg_3_pivf2e.png">
+            <p>NEW MODELS</p>
+        </div>
+        <div id="grid-item-1">
+            <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_scale,h_223/v1664397592/screendealer/pngegg_5_tbmieg.png">
+            <p>LATEST TECHNOLOGY</p>
+        </div>
+        <div id="grid-item-2">
+            <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_scale,h_184/v1664223907/screendealer/PngItem_2193289_ni9f7l.png">
+            <p>FOR GAMING</p>
+        </div>
+        <div id="grid-item-3">
+            <img src="https://res.cloudinary.com/dgiqi5urn/image/upload/c_scale,h_221/v1664397160/screendealer/pngegg_4_kck5wu.png">
+            <p>OUR BEST PRODUCTS</p>
+        </div>
+      </div>
+
+    <footer class="site-footer" id="contact">
+        
+        <div class="footer-first">
+        <div class="description">
+            <h2>ABOUT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nihil pariatur 
+                repudiandae similique quidem. Natus iste
+                tempore, adipisci laudantium quo in rerum!
+                Veritatis aspernatur dignissimos blanditiis ratione perspiciatis
+                obcaecati nemo dolorem.</p>
+        </div>
+
+        <div class="categories">
+            <ul>
+                <h2>Categories</h2>
+                <li>TVS</li>
+                <li>Monitors</li>
+                <li>Other</li>
+            </ul>
+        </div>
+
+        <div class="quick-link">
+            
+            <ul>
+                <h2>Quick Links</h2>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        </div>
+        <hr>
+        <div class="footer-second">
+        
+
+        <div class="copyright">
+            <p>Copyright © 2017 All Rights Reserved by ScreenDealer.</p>
+        </div>
+
+        <div class="social-media">
+            <a><i class='bx bxl-facebook-square'></i></a>
+            <a><i class='bx bxl-linkedin-square'></i></a>
+            <a><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+<!--Glide Initialization-->
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script>
+  new Glide('.glide').mount()
+</script>
+
+<!-- My Script -->
+<script src="script.js"></script>
+
+
+
+</html>
